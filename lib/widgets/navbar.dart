@@ -11,6 +11,8 @@ class MyApp extends StatelessWidget {
   }
 }
 
+
+// Defines a stateful widget that represents the game navbar.
 class GameNavbar extends StatefulWidget {
   const GameNavbar({super.key});
 
@@ -18,9 +20,9 @@ class GameNavbar extends StatefulWidget {
   State<GameNavbar> createState() => _GameNavbarState();
 }
 
+// Defines a state for the game navbar.
 class _GameNavbarState extends State<GameNavbar> {
   int _selectedIndex = 0;
-
 
   @override
   Widget build(BuildContext context) {
@@ -39,14 +41,14 @@ class _GameNavbarState extends State<GameNavbar> {
             extended: true,
             destinations: const <NavigationRailDestination>[
               NavigationRailDestination(
-                icon: Icon(Icons.favorite_border),
-                selectedIcon: Icon(Icons.favorite),
-                label: Text('First'),
+                icon: Icon(Icons.bubble_chart_outlined),
+                selectedIcon: Icon(Icons.bubble_chart),
+                label: Text('Vask VR'),
               ),
               NavigationRailDestination(
-                icon: Icon(Icons.bookmark_border),
-                selectedIcon: Icon(Icons.book),
-                label: Text('Second'),
+                icon: Icon(Icons.settings_outlined),
+                selectedIcon: Icon(Icons.settings),
+                label: Text('Settings'),
               ),
               NavigationRailDestination(
                 icon: Icon(Icons.star_border),
